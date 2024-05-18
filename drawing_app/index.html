@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Drawing Canvas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="nickname">
+        <label for="nicknameInput">Enter your nickname:</label>
+        <input type="text" id="nicknameInput">
+        <button id="setNickname">Set Nickname</button>
+    </div>
+    <div id="toolbar">
+        <button id="pencil">Pencil</button>
+        <button id="eraser">Eraser</button>
+        <div id="colorPalette">
+            <!-- Add color options here -->
+        </div>
+        <input type="color" id="colorPicker" style="display: none;">
+        <input type="range" id="brushSize" min="1" max="100" value="20">
+    </div>
+    <div id="canvas-container">
+        <canvas id="drawingCanvas"></canvas>
+        <div id="cursorNickname"></div>
+    </div>
+    <div id="timeline">
+        <button id="addFrame">Add Frame</button>
+        <button id="playAnimation">Play</button>
+        <button id="stopAnimation">Stop</button>
+        <div id="framesContainer"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
